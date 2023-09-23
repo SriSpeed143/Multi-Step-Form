@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multi Step Form</title>
+        <link rel="Stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div id="cont" class="container">
+            <form id="form1">
+                <h3>Create Account</h3>
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password"><br>
+                <input type="password" placeholder="Confirm Password">
+                <div class="action">
+                    <button type="button" id="next1">Next</button>
+                </div>
+            </form>
+            <form id="form2">
+                <h3>Social Links</h3>
+                <input type="text" placeholder="GitHub">
+                <input type="text" placeholder="MicroSoft">
+                <input type="text" placeholder="Twitter">
+                <div class="action">
+                    <button type="button" id="back1">Back</button>
+                    <button type="button" id="next2">Next</button>
+                </div>
+            </form>
+            <form id="form3">
+                <h3>Personal Information</h3>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required> 
+                <input type="tel" placeholder="Mobile No" required>
+                <input type="date" placeholder="Age" required>
+                <div class="action">
+                    <button type="button" id="back2">Back</button>
+                    <button type="button" id="submit">Submit</button>
+                </div>
+            </form>
+            <div class="step_row">
+                <div id="progress"></div>
+                <div class="step_col"><small>Step 1</small></div>
+                <div class="step_col"><small>Step 2</small></div>
+                <div class="step_col"><small>Step 3</small></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
